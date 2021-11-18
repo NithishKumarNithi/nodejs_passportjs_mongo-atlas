@@ -1,0 +1,21 @@
+<%- include('header'); -%>
+
+<div class="container-fluid">
+   <div class="wrapper">
+       <h1>Logo</h1>
+       <div class="login-wrap">
+            <h3 class="mb-5">Dashboard</h3>
+            <% if (success) { %>
+              <div class="alert alert-success mt-4" role="alert">
+                <%= success %>
+              </div>
+            <% } %>
+            <% if (user) { %>
+              <p class="text-center mt-4"> Welcome <%= user %> ! </p>    
+            <% } %>
+            <p  class="text-center"><a href="/logout" >Click to Logout</a></p>
+       </div>
+   </div>
+</div>
+
+<%- include('footer'); -%>
