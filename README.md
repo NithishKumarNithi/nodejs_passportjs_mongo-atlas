@@ -1,0 +1,1 @@
+Developed simple login application using node, express, passport.js & mongodb-atlas
